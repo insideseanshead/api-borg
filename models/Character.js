@@ -10,7 +10,9 @@ module.exports = function(sequelize, DataTypes) {
         presence: DataTypes.INTEGER,
         toughness: DataTypes.INTEGER,
         weaponOne: DataTypes.STRING,
+        weaponOneDmg: DataTypes.INTEGER,
         weaponTwo: DataTypes.STRING,
+        weaponOneDmg: DataTypes.INTEGER,
         armor: DataTypes.STRING,
         silver: DataTypes.INTEGER
     });
