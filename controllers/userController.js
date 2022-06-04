@@ -80,7 +80,7 @@ router.get('/secretProfile', (req,res) => {
         include : [{
             model: db.Campaign,
             // Check back for displaying items on front end.
-            include: [db.Character]
+            include: [db.Character, db.Item, db.Scroll]
         }]
     })
 })
