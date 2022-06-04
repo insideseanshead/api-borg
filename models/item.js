@@ -6,6 +6,7 @@ module.exports = function(sequelize, DataTypes) {
     });
 
     Item.associate = function(models) {
+        Item.belongsTo(models.Campaign);
         Item.belongsTo(models.Character);
         Item.belongsTo(models.User)
     };

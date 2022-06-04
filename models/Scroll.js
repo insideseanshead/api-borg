@@ -5,6 +5,7 @@ module.exports = function(sequelize, DataTypes) {
     })
 
     Scroll.associate = function(models) {
+        Scroll.belongsTo(models.Campaign);
         Scroll.belongsTo(models.Character);
         Scroll.belongsTo(models.User)
     };

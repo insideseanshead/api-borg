@@ -5,6 +5,8 @@ module.exports = function(sequelize, DataTypes) {
 
     Campaign.associate = function(models) {
         Campaign.hasMany(models.Character)
+        Campaign.hasMany(models.Item)
+        Campaign.hasMany(models.Scroll)
         Campaign.belongsTo(models.User)
     }
 

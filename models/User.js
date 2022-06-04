@@ -14,10 +14,6 @@ module.exports = function(sequelize, DataTypes) {
             type:DataTypes.STRING,
             required:true,
             unique:true
-        },
-        player:{
-            type:DataTypes.STRING,
-            required: true
         }
     });
 

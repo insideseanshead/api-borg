@@ -18,6 +18,8 @@ module.exports = function(sequelize, DataTypes) {
     });
 
     Character.associate=function(models) {
+        Character.hasMany(models.Item)
+        Character.hasMany(models.Scroll)
         Character.belongsTo(models.Campaign);
         Character.belongsTo(models.User)
     }
